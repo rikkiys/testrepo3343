@@ -1,0 +1,18 @@
+Create a static mockup version of the application in HTML format with hardcoded data. It must consist minimum of 4 pages:
+
+- List of items for each entity (e.g., list of departments and list of employees in the departments;
+- Item details page for each entity.
+
+In addition:
+- at least one page must have a field for searching items by date. 
+For example, searching for employees born on a certain date or in the period between dates. 
+This step doesn't require the implementation of the search process. 
+All you need is to display the field.
+
+Apart from that:
+- there must be buttons/forms/pages that allow you to change (add/edit/delete) the data. 
+As in the previous point, there is no need to implement data change, it's just a mockup :)
+
+All pages have to include hyperlinks to simulate application use cases. 
+
+Inside "documentation" folder create folder "html_prototype" and push static prototype there.

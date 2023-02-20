@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BestBooks</title>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+	<div class="wrapper">
+	<ul class="menu">
+		<li class="menu-item">
+			<a href="basic.html"><span class="logo">BestBooks</span> </a>
+		</li>
+
+		<li class="menu-item" style="float: right;">
+			<label for="searchBox" class="visuallyhidden"> Пошук: </label>
+			<input type="search" id="searchBox" class="searchInput" name="search" placeholder="Start searching..." onkeyup="get_results(this.value)">
+		</li>
+	</ul>
+
+			<h3>Add new list</h3>
+
+			<form action="#">
+			  <label for="title">List title:</label><br>
+			  <input type="text" id="title" name="title" value="Enter list title">
+			  <br><br>
+			  <label for="description">List description:</label><br>
+			  <textarea id="description" name="description" rows="5" cols="33">Add the description...
+			  </textarea>
+			<br><br>
+				<label for="items">List items:</label><br>
+			  <textarea id="items" name="items" rows="5" cols="33">List items...
+			  </textarea>
+			<br><br>
+			  <input type="submit" value="Create"> <!-- isNew ? "Create" : "Save" -->
+			</form>
+		
+	</div>
+	<script src="index.js"></script>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BestBooks</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+	
+</html>
