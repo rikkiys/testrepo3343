@@ -5,19 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BestBooks</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
   </head>
   <body>
 	<div class="wrapper">
-		<h3>Western Canon</h3> <span><a href="list-form.html">edit</a></span> <!-- implement &list_id={list_id} to open form in edit mode with list data from list_id -->
+		<ul class="menu">
+			<li class="menu-item">
+				<a href="../basic.html"><span class="logo">BestBooks</span></a>
+			</li>
 
-		<ol>
-			<li><p>The Odyssey by Homer — published -700</p></li>
-			<li><p>The IliadThe by Homer — published -800</p></li>
-			<li><p>Don Quixote by Miguel de Cervantes Saavedra — published 1605</p></li>
-			<li><p>The Aeneid by Virgil — published -19</p></li>
-			<li><p>The Great Gatsby by F. Scott Fitzgerald — published 1925</p></li>
-		</ol>
+			<li class="menu-item" style="float: right;">
+				<label for="searchBox" class="visuallyhidden"> Пошук: </label>
+				<input type="search" id="searchBox" class="menuInput" name="search" placeholder="Start searching..." onkeyup="get_results(this.value)">
+			</li>
+		</ul>
+
+	<div class="grid-container">
+		  
+		<div class="item1">
+			<ul class="menu">
+				<li><a href="../lists.html">Lists</a></li>
+				<li><a href="../books.html">Books</a></li>
+				<li><a href="../genres.html">Genres</a></li>
+			</ul>
+		</div>
+				
+		<div class="item2">
+			<h3>Western Canon</h3> 
+			
+			<span><a href="list-form.html">edit</a></span> <!-- implement &list_id={list_id} to open form in edit mode with list data from list_id -->
+
+			<ol>
+				<li><p>The Odyssey by Homer — published -700</p></li>
+				<li><p>The IliadThe by Homer — published -800</p></li>
+				<li><p>Don Quixote by Miguel de Cervantes Saavedra — published 1605</p></li>
+				<li><p>The Aeneid by Virgil — published -19</p></li>
+				<li><p>The Great Gatsby by F. Scott Fitzgerald — published 1925</p></li>
+			</ol>
+
+			<span><a href="#" onclick="window.confirm(`You want to remove the list?`)">delete</a></span>
+		</div>
+
+		<div class="item3">
+			alhambra Inc. - 2023
+		</div>
+
 	</div>
+	
 </body>
 </html>

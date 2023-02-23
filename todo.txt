@@ -1,4 +1,5 @@
-Create a static mockup version of the application in HTML format with hardcoded data. It must consist minimum of 4 pages:
+Create a static mockup version of the application in HTML format with hardcoded data.
+It must consist minimum of 4 pages:
 
 - List of items for each entity (e.g., list of departments and list of employees in the departments;
 - Item details page for each entity.

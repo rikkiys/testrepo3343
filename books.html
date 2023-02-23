@@ -1,53 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BestBooks</title>
-    <link rel="stylesheet" href="style.css">
-	
-  </head>
-  <body>
-	<div class="wrapper">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>BestBooks</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
 
-		<ul class="menu">
-			<li class="menu-item">
-				<a href="basic.html"><span class="logo">BestBooks</span> </a>
-			</li>
+		<div class="wrapper">
 
-			<li class="menu-item" style="float: right;">
-				<label for="searchBox" class="visuallyhidden"> Пошук: </label>
-				<input type="search" id="searchBox" class="searchInput" name="search" placeholder="Start searching..." onkeyup="get_results(this.value)">
-			</li>
-		</ul>
+			<ul class="menu">
+				<li class="menu-item">
+					<a href="basic.html"><span class="logo">BestBooks</span> </a>
+				</li>
+
+				<li class="menu-item" style="float: right;">
+					<label for="searchBox" class="visuallyhidden"> Пошук: </label>
+					<input type="search" id="searchBox" class="menuInput" name="search" placeholder="Search by name & author" onkeyup="get_results(this.value)">
+				</li>
+
+				<li class="menu-item" style="float: right;">
+					<form action="#">
+						<label for="from_date">
+							Published from:
+						</label>
+						<input type="date" id="from_date" class="menuInput" name="from_date" placeholder="dd-mm-yyyy" value="">
+						
+						<label for="to_date">
+							Published to:
+						</label>
+						<input type="date" id="to_date" class="menuInput" name="to_date" placeholder="dd-mm-yyyy" value="">
+					</form>
+				</li>
+			</ul>
 		
-		<div class="grid-container">
-		  
-	<div class="item1">
-		<ul class="menu">
-			<li><a href="lists.html">Lists</a></li>
-			<li><a href="books.html">Books</a></li>
-			<li><a href="genres.html">Genres</a></li>
-		</ul>
-	</div>
-		  
-		 <div class="item2">
-			<h3>All books:</h3>
-			<p><a href="lists/list-form.html">Add new</a></p>
-			<ol>
-				<li>The Great Gatsby by F. Scott Fitzgerald</li>
-				<li><a href="lists/western-canon.html">The Odyssey by Homer</a></li>
-				<li>The IliadThe by Homer</li>
-				<li>Don Quixote by Miguel de Cervantes Saavedra</li>
-				<li>The Aeneid by Virgil</li>
-			</ol>
-		</div>
-		  
-		  <div class="item5">Footer</div>
+			<div class="grid-container">
+						
+				<div class="sidebar">
+					<ul class="sidemenu">
+						<li class="sidemenu-item"><a href="lists.html">Lists</a></li>
+						<li class="sidemenu-item"><a href="books.html">Books</a></li>
+						<li class="sidemenu-item"><a href="genres.html">Genres</a></li>
+					</ul>
+				</div>
+						
+				<div class="content">
+					<h3>All books:</h3>
+					
+					<p><a href="books/book-form.html">Add new</a></p>
+					<ul>
+						<li>The Great Gatsby by F. Scott Fitzgerald</li>
+						<li><a href="books/odyssey.html">The Odyssey by Homer</a></li>
+						<li>The Iliad by Homer</li>
+						<li>Don Quixote by Miguel de Cervantes Saavedra</li>
+						<li><a href="books/aeneid.html"></a>The Aeneid by Virgil</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="footer">
+				Alhambra — 2023 (c)
+			</div>
+
 		</div>
 
 	</div>
-	<script src="index.js"></script>
+	
   </body>
 </html>
