@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>BestBooks</title>
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 
@@ -17,8 +17,8 @@
 				</li>
 
 				<li class="menu-item" style="float: right;">
-					<label for="searchBox" class="visuallyhidden"> Пошук: </label>
-					<input type="search" id="searchBox" class="menuInput" name="search" placeholder="Start searching..." onkeyup="get_results(this.value)">
+					<label for="searchBox" class="visuallyhidden"> Search: </label>
+					<input type="search" id="searchBox" class="menuInput" name="search" placeholder="Start searching..." onkeyup="handleSearch(this.value)">
 				</li>
 			</ul>
 				
@@ -40,8 +40,9 @@
 						<li><a href="lists/western-canon.html">Western canon</a> by Harold Blum</li>
 						<li>Mentioned in Antifragile by Nassim Taleb</li>
 						<li>Books to read by Linus Torvald</li>
-						<li>Books to read by Paul Graham</li>
-						<li>Books to read by Naval Ravikant</li>
+						<li>Books advised by Paul Graham</li>
+						<li>Books recommended by Naval Ravikant</li>
+						<li>20 books to read in your 20s</li>
 					</ol>
 				</div>
 
@@ -52,6 +53,6 @@
 			</div>
 
 		</div>
-
+		<script src="scripts/search.js"></script>
 	</body>
 </html>

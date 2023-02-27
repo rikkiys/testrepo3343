@@ -1,56 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BestBooks</title>
-    <link rel="stylesheet" href="../style.css">
-  </head>
-  <body>
-	<div class="wrapper">
-		<ul class="menu">
-			<li class="menu-item">
-				<a href="../basic.html"><span class="logo">BestBooks</span></a>
-			</li>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>BestBooks</title>
+		<link rel="stylesheet" href="../css/style.css">
+	</head>
+	<body>
 
-			<li class="menu-item" style="float: right;">
-				<label for="searchBox" class="visuallyhidden"> Пошук: </label>
-				<input type="search" id="searchBox" class="menuInput" name="search" placeholder="Start searching..." onkeyup="get_results(this.value)">
-			</li>
-		</ul>
-
-	<div class="grid-container">
-		  
-		<div class="item1">
+		<div class="wrapper">
+		
 			<ul class="menu">
-				<li><a href="../lists.html">Lists</a></li>
-				<li><a href="../books.html">Books</a></li>
-				<li><a href="../genres.html">Genres</a></li>
+				<li class="menu-item">
+					<a href="../basic.html"><span class="logo">BestBooks</span> </a>
+				</li>
 			</ul>
-		</div>
 				
-		<div class="item2">
-			<h3>Western Canon</h3> 
+			<div class="grid-container">
+					
+				<div class="sidebar">
+					<ul class="sidemenu">
+						<li class="sidemenu-item"><a href="../lists.html">Lists</a></li>
+						<li class="sidemenu-item"><a href="../books.html">Books</a></li>
+						<li class="sidemenu-item"><a href="../genres.html">Genres</a></li>
+					</ul>
+				</div>
+
+				<div class="content">
+					<h3>Western Canon</h3> 
 			
-			<span><a href="list-form.html">edit</a></span> <!-- implement &list_id={list_id} to open form in edit mode with list data from list_id -->
+					<span>
+						<a href="list-form.html">edit</a> <!-- implement &list_id={list_id} to open form in edit mode with list data from list_id -->
+					</span>
+					<ol>
+						<li><p>The Odyssey by Homer — published -700</p></li>
+						<li><p>The IliadThe by Homer — published -800</p></li>
+						<li><p>Don Quixote by Miguel de Cervantes Saavedra — published 1605</p></li>
+						<li><p>The Aeneid by Virgil — published -19</p></li>
+						<li><p>The Great Gatsby by F. Scott Fitzgerald — published 1925</p></li>
+					</ol>
+					<span>
+						<a href="#" onclick="window.confirm(`You want to remove the list?`)">delete</a>
+					</span>
+				</div>
+			</div>
 
-			<ol>
-				<li><p>The Odyssey by Homer — published -700</p></li>
-				<li><p>The IliadThe by Homer — published -800</p></li>
-				<li><p>Don Quixote by Miguel de Cervantes Saavedra — published 1605</p></li>
-				<li><p>The Aeneid by Virgil — published -19</p></li>
-				<li><p>The Great Gatsby by F. Scott Fitzgerald — published 1925</p></li>
-			</ol>
+			<div class="footer">
+				Alhambra — 2023 (c)
+			</div>
 
-			<span><a href="#" onclick="window.confirm(`You want to remove the list?`)">delete</a></span>
 		</div>
-
-		<div class="item3">
-			alhambra Inc. - 2023
-		</div>
-
-	</div>
-	
-</body>
+	</body>
 </html>

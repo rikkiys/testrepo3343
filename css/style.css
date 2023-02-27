@@ -33,7 +33,7 @@
 }
 
 .sidemenu > li {
-  padding: 5px;
+  padding-bottom: 3px;
 }
 
 .sidemenu-item a:hover:not(.active) {
@@ -43,7 +43,7 @@
 .logo {
   text-align: center;
   font-weight: bold;
-  font-size: larger;
+  font-size: x-large;
   color: rgb(41, 153, 41);
 }
 
@@ -74,22 +74,19 @@
   font-size: 15px;
 }
 
-/*Grid*/
-/* .item1 { grid-area: menu; }
-.item2 { grid-area: main; }
-.item3 { grid-area: footer; } */
+.date-picker {
+  float: left;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
 
+/*Grid*/
 .grid-container {
   display: grid;
   grid-template-columns: 200px auto;
   background-color: white;
   padding: 5px;
-  /* grid-template-areas:
-    'menu main main main main'
-    'footer footer footer footer footer'; */
-  /*gap: 20px;
-  background-color: #2196F3;
-  padding: 10px*/
  }
 
 .grid-container > div {
@@ -98,6 +95,16 @@
   font-size: 1rem;
   min-height: 720px;
 }
+
+.dashboard {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding-left: 10px;
+ }
+
+ .widget >p {
+  padding-left: 3px;
+ }
 
 .footer {
   position: absolute;

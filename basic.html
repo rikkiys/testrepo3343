@@ -1,51 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BestBooks</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-	<div class="wrapper">
-	
-	<ul class="menu">
-		<li class="menu-item">
-			<a href="basic.html"><span class="logo">BestBooks</span> </a>
-		</li>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>BestBooks</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
 
-		<li class="menu-item" style="float: right;">
-			<label for="searchBox" class="visuallyhidden"> Пошук: </label>
-			<input type="search" id="searchBox" class="menuInput" name="search" placeholder="Start searching..." onkeyup="get_results(this.value)">
-		</li>
-	</ul>
+		<div class="wrapper">
 		
-	<div class="grid-container">
-		  
-	<div class="item1">
-		<ul class="menu">
-			<li><a href="lists.html">Lists</a></li>
-			<li><a href="books.html">Books</a></li>
-			<li><a href="genres.html">Genres</a></li>
-		</ul>
-	</div>
-		  
-	<div class="item2">
-		<p>Published lists: {}</p>
-		<p>Books: {}</p>
-		<p>Most liked lists:</p>
-		<p>Most recommended books: {}</p>
-		<p>Most popular genres: {}</p>
-	</div>
-		  
-	<div class="item3">
-		Footer
-	</div>
+			<ul class="menu">
+				<li class="menu-item">
+					<a href="basic.html"><span class="logo">BestBooks</span> </a>
+				</li>
+			</ul>
+				
+			<div class="grid-container">
+					
+				<div class="sidebar">
+					<ul class="sidemenu">
+						<li class="sidemenu-item"><a href="lists.html">Lists</a></li>
+						<li class="sidemenu-item"><a href="books.html">Books</a></li>
+						<li class="sidemenu-item"><a href="genres.html">Genres</a></li>
+					</ul>
+				</div>
+						
+				<div class="content">
+					<h2>Welcome to BB dashboard:</h2>
+					<div class="dashboard">
 
-	</div>
+						<div class="widget">
+							<h4>Published Lists:</h4>
+							<p>7</p>
+						</div>
+						
+						<div class="widget">
+							<h4>Books in Lists:</h4>
+							<p>33</p>
+						</div>
 
-	</div>
-	<script src="index.js"></script>
-  </body>
+						<div class="widget">
+							<h4>Most Popular Books:</h4>
+							<p>Aeneid by Vergil</p>
+						</div>
+
+						<div class="widget">
+							<h4>Most Liked Lists:</h4>
+							<ul>
+								<li>20 books to read in your 20s</li>
+								<li>Recommended by Paul Graham</li>
+								<li>Western Canon</li>
+							</ul>
+						</div>
+
+						<div class="widget">
+							<h4>Most Popular Genres:</h4>
+							<ul>
+								<li>fiction</li>
+								<li>greek</li>
+								<li>sci-fi</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="widget">
+						<h4 style="margin-bottom: 0px;">Visitors</h4>
+						<ul class="date-picker">
+							<li class="menu-item" style="float: left;">
+								<form action="#">
+									<label for="from_date">From:</label>
+									<input type="date" id="from_date" class="menuInput" name="from_date" placeholder="dd-mm-yyyy" value="">
+									
+									<label for="to_date">To:</label>
+									<input type="date" id="to_date" class="menuInput" name="to_date" placeholder="dd-mm-yyyy" value="">
+									<input type="submit" value="Show"/>
+								</form>
+							</li>
+						</ul>
+						<div class="visitors-graph"></div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="footer">
+				Alhambra — 2023 (c)
+			</div>
+
+		</div>
+	</body>
 </html>
